@@ -2,7 +2,6 @@ package qa.owner.config;
 
 import org.aeonbits.owner.Config;
 
-import java.net.URI;
 import java.net.URL;
 
 public interface WebDriverConfig extends Config {
