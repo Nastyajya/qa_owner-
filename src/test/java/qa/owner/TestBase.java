@@ -6,6 +6,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import qa.owner.helpers.Attach;
 
 import java.util.Map;
 
@@ -32,10 +33,10 @@ public class TestBase {
 
     @AfterEach
      void addAttachments() {
-        guru.qa.helpers.Attach.screenshotAs("Last screenshot");
-        guru.qa.helpers.Attach.pageSource();
-        guru.qa.helpers.Attach.browserConsoleLogs();
-        guru.qa.helpers.Attach.addVideo();
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
         closeWebDriver();
     }
 }
