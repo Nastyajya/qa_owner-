@@ -3,7 +3,6 @@ package qa.owner;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Test;
 import qa.owner.config.WebConfig;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byTagAndText;
 import static com.codeborne.selenide.Selenide.*;
